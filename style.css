@@ -1,0 +1,106 @@
+h1{
+    font-family: Outfit;
+}
+P{
+    font-size: 16px;
+}
+h2{
+    color:hsl(14, 45%, 36%);
+}
+
+.mainbloc{
+    max-width: 1440px;
+    border-radius: 20px;
+    margin: 5%;
+}
+.RecipeImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.RecipeImage img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 75%;
+    width: 75%;
+}
+
+.PreparationTime{
+    background-color: burlywood;
+    border-radius: 20px;
+}
+.PreparationTime h3{
+    color : hsl(332, 51%, 32%);
+    margin-left: 20px;
+}
+
+.PreparationTime li{
+    margin-bottom: 2%;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.Ingredients{
+    border-bottom: 1px solid;
+    color: black;
+    margin-bottom: 50px;
+}
+.Ingredients h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.Instructions{
+    border-bottom: 1px solid;
+    color: black;
+    margin-bottom: 50px;
+}
+.Instructions H2{
+    color: hsl(14, 45%, 36%);
+}
+
+ol{
+    list-style: none;
+    counter-reset: list-counter;;
+}
+ol li {
+    counter-increment: list-counter; /* Incrémente le compteur */
+}
+
+ol li::before {
+    content: counter(list-counter) "."; /* Affiche le numéro */
+    font-weight: bold; /* Met en gras */
+    color: hsl(14, 45%, 36%);
+    margin-right: 10px;
+}
+
+.Nutrition{
+    max-width: 600px; /* Ajuste la largeur */
+    text-align: left;
+}
+.Nutrition h2{
+    color: hsl(14, 45%, 36%);
+}
+.Nutrition table{
+    width: 100%;
+}
+.Nutrition tr{
+    border-bottom: 1px solid ;
+    color: black;
+}
+
+td {
+    padding: 12px 10px;
+    font-size: 18px;
+}
+
+td.values {
+    font-weight: bold;
+    text-align: right;
+    text-align: center;
+    color: hsl(14, 45%, 36%);
+}
+
+
